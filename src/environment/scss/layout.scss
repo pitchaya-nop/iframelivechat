@@ -1,0 +1,91 @@
+@media (max-width: 320px) {
+  .appChat{
+    width: 100vw;
+    height: 100vh;
+  }
+  .bodyframe{
+    display:flex;
+    flex-direction: column;
+    height: calc(100% - 28px);
+  }
+  .container{
+    width: 100%;
+    // height: calc(100% - 126px);
+    // height: 100%;
+    flex: 1;
+    background-color: #ECECF7;
+    overflow-y: hidden;
+  }
+  .header{
+    width: 100%;
+    height: 45px;
+    background-color: #2A2A54;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1{
+      font-size: 16px;
+      font-weight: 700;
+      margin: 0;
+      color: #ffffff;
+    }
+  }
+  .footer{
+    background-color: #ffffff;
+    padding: 10px 10.5px;
+    // height: 53px;
+    .inputMessage{
+      display: flex;
+      width: 100%;
+      align-items: center;
+      // height: 53px;
+      // min-height: 53px;
+      // max-height: 87px;
+      .icon-space{
+        flex: 1;
+        display: flex;
+        padding-left: 10px;
+        justify-content: space-between;
+        .icon-action{
+          width: 26px;
+          height: 26px;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+      .text-space{
+        width: 203px;
+        textarea{
+          max-height: 67px;
+          min-height: 33px;
+          resize: none;
+          padding: 9px;
+          box-sizing: border-box;
+          font-size: 15px;
+          overflow: hidden;
+          overflow-wrap: break-word;
+          height: 33px;
+          outline: 0;
+          border-radius: 2px;
+          background-color: #F2F2F2;
+          border: 1px solid #E2E2E2;
+        }
+      }
+      
+
+    }
+    .powerByGoochat{
+      position: fixed;
+      // display:block;
+      bottom: 0;
+      width:100%;
+      height: 28px;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
