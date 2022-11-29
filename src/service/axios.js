@@ -8,8 +8,9 @@ const fetchClient = () => {
       'Device-Id': uuid_v4(),
       'Platform': 'web',
       'Accept-Language': 'en',
-
+      'App-Version': '1.0.0'
     },
+
   };
 
   // Create instance

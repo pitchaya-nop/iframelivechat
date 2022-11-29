@@ -6,23 +6,23 @@
 // // import Service from '../api/api';
 // // import { setuser, setoa } from '../store/user';
 // const PrivateRoute = ({ children }) => {
-//   const navigate = useNavigate();
+//   // const navigate = useNavigate();
 //   const token = new URLSearchParams(window.location.search).get("token")
-//   const dispatch = useDispatch();
-//   const { topbarDisplay } = useSelector((state) => state.common);
+//   // const dispatch = useDispatch();
+//   // const { topbarDisplay } = useSelector((state) => state.common);
 //   // const { id } = useParams();
 
-//   if (topbarDisplay === null && token) {
-//     Service({
-//       method: 'post',
-//       url: '/live-chat/data',
-//       headers: {
-//         'Authorization': `Bearer ${token}`
-//       }
-//     }).then((res) => {
-//       dispatch(settopbar(res.data.data.widget.topBar[res.data.data.language]))
-//     })
-//   }
+//   // if (topbarDisplay === null && token) {
+//   //   Service({
+//   //     method: 'post',
+//   //     url: '/live-chat/data',
+//   //     headers: {
+//   //       'Authorization': `Bearer ${token}`
+//   //     }
+//   //   }).then((res) => {
+//   //     dispatch(settopbar(res.data.data.widget.topBar[res.data.data.language]))
+//   //   })
+//   // }
 //   // if (localStorage.getItem('room') && token) {
 //   //   navigate('/livechat', { state: localStorage.getItem('room'), token: token })
 //   // }
@@ -56,7 +56,7 @@
 //   //       console.log(error);
 //   //     });
 //   // }
-//   return token ? <Navigate to="" /> : <Navigate to="/login" />;
+//   return token ? children : <Navigate to="/login" />;
 //   // return children
 // };
 

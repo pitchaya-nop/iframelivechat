@@ -63,7 +63,8 @@
 } */
 body {
   margin: 0;
-  font-family: 'PentorcorporateBody'
+  font-family: 'PentorcorporateBody';
+  background: transparent !important;
 }
 ::-webkit-scrollbar {
   width: 6px;
@@ -90,3 +91,8 @@ body {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 } */
+@media (min-width: 321px) {
+  body{
+    display:none
+  }
+}

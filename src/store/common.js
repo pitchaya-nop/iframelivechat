@@ -5,7 +5,8 @@ const slice = createSlice({
   initialState: {
     topbarDisplay: null,
     livechatClassname: null,
-    imageofficial: null
+    imageofficial: null,
+    roomdetail: null
   },
   reducers: {
     setTopbarDisplay: (state, action) => {
@@ -17,13 +18,16 @@ const slice = createSlice({
     setImageDisplay: (state, action) => {
       state.imageofficial = action.payload
     },
+    setRoomdetail: (state, action) => {
+      state.roomdetail = action.payload
+    }
   },
 });
 export default slice.reducer
 
 
 // Actions
-const { setTopbarDisplay, setLivechatClassname, setImageDisplay } = slice.actions
+const { setTopbarDisplay, setLivechatClassname, setImageDisplay, setRoomdetail } = slice.actions
 
 export const settopbar = (data) => async dispatch => {
   dispatch(setTopbarDisplay(data))
@@ -35,4 +39,8 @@ export const setclassname = (data) => async dispatch => {
 
 export const setimagedisplay = (imagesource) => async dispatch => {
   dispatch(setImageDisplay(imagesource))
+}
+
+export const setroomdetail = (roomdetail) => async dispatch => {
+  dispatch(setRoomdetail(roomdetail))
 }

@@ -8,6 +8,7 @@ import PrivateRoute from './route/route'
 import Welcome from './view/welcome'
 import Livechat from './view/livechat'
 import Togglelivechat from './view/togglelivechat'
+import Previewimg from './view/previewimg'
 const App = () => {
   return (
     <Router>
@@ -21,7 +22,11 @@ const App = () => {
         }
         />
         <Route path="/livechat" element={
+
           <Livechat />
+        } />
+        <Route path="/preview" element={
+          <Previewimg />
         } />
       </Routes>
     </Router>
